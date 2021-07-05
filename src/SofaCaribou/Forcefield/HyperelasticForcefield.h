@@ -98,7 +98,7 @@ public:
     void addKToMatrix(sofa::defaulttype::BaseMatrix * /*matrix*/, SReal /*kFact*/, unsigned int & /*offset*/) override;
 
     /** Get the set of Gauss integration nodes of an element */
-    auto gauss_nodes_of(std::size_t element_id) const -> const auto & {
+    inline auto gauss_nodes_of(std::size_t element_id) const -> const auto & {
         return p_elements_quadrature_nodes[element_id];
     }
 
